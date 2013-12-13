@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://renatosousafilho.github.io/atom.xml" rel="self"/>
-  <link href="http://renatosousafilho.github.io/"/>
-  <updated>2013-12-13T09:08:19-03:00</updated>
-  <id>http://renatosousafilho.github.io/</id>
+  <title><![CDATA[Renato Filho]]></title>
+  <link href="http://renatosousafilho.github.com/atom.xml" rel="self"/>
+  <link href="http://renatosousafilho.github.com/"/>
+  <updated>2013-12-13T09:11:33-03:00</updated>
+  <id>http://renatosousafilho.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Renato Filho]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Rack - Uma Rápida Apresentação]]></title>
-    <link href="http://renatosousafilho.github.io/blog/2013/03/13/rack-uma-rapida-apresentacao/"/>
+    <link href="http://renatosousafilho.github.com/blog/2013/03/13/rack-uma-rapida-apresentacao/"/>
     <updated>2013-03-13T14:26:00-03:00</updated>
-    <id>http://renatosousafilho.github.io/blog/2013/03/13/rack-uma-rapida-apresentacao</id>
+    <id>http://renatosousafilho.github.com/blog/2013/03/13/rack-uma-rapida-apresentacao</id>
     <content type="html"><![CDATA[<p>Antes de começar a escrever qualquer coisa sobre Ruby on Rails ou Sinatra, decidi fazer um rápido estudo de algo que, particulamente, nunca dei a devida atenção até então, a Gem que permite o desenvolvimento do lado do Servidor com ruby, o Rack.</p>
 
 
@@ -70,9 +70,9 @@ run HelloWorld.new
   
   <entry>
     <title type="html"><![CDATA[Backbone.js - Introdução]]></title>
-    <link href="http://renatosousafilho.github.io/blog/2013/03/13/backbone-dot-js-introducao/"/>
+    <link href="http://renatosousafilho.github.com/blog/2013/03/13/backbone-dot-js-introducao/"/>
     <updated>2013-03-13T11:20:00-03:00</updated>
-    <id>http://renatosousafilho.github.io/blog/2013/03/13/backbone-dot-js-introducao</id>
+    <id>http://renatosousafilho.github.com/blog/2013/03/13/backbone-dot-js-introducao</id>
     <content type="html"><![CDATA[<p>Neste post apresentarei um pouco sobre esta biblioteca Javascript que nos permite trazer o padrão MVC para o desenvolvimento com JavaScript. Lógico que não é a única biblioteca com essa proposta e dizer que ele é um dos mais importantes pode acabar sendo discordado para outros desenvolvedores, mas uma coisa é certa, dentre todos as bibliotecas ela é a mais simples e funcional, servindo também para um bom ponto de partida se você quiser estudar outras bibliotecas e frameworks similares como o Meteor, Batman.js, Sencha, entre outras.</p>
 
 <p>Para começar a desenvolver usando o Backbone.js tudo que você precisa saber é um pouco de JSON e Javascript, e de jQuery, porém se você não for tão familiarizado, o estudo de Backbone.js pode matar dois coelhos com uma cajadada só, como foi meu caso. Então vamos conhecer o que podemos fazer com Backbone.js.</p>
@@ -85,7 +85,7 @@ run HelloWorld.new
 
 <p>Como eu crio uma aplicação com Backbone.js?</p>
 
-<p>Para começar a criar uma aplicação com Backbone.js(<a href="http://backbonejs.org/">http://backbonejs.org/</a>), você precisa apenas do código da biblioteca  e do Underscore.js(<a href="http://underscorejs.org/">http://underscorejs.org/</a>),  uma dependência do Backbone.js. Tendo estes dois arquivos tudo que você precisa agora é de uma página html para começar sua aplicação.</p>
+<p>Para começar a criar uma aplicação com Backbone.js(http://backbonejs.org/), você precisa apenas do código da biblioteca  e do Underscore.js(http://underscorejs.org/),  uma dependência do Backbone.js. Tendo estes dois arquivos tudo que você precisa agora é de uma página html para começar sua aplicação.</p>
 
 <p><html>
 <head></p>
@@ -110,9 +110,9 @@ run HelloWorld.new
   
   <entry>
     <title type="html"><![CDATA[Nodejs - Usando REST Com Express]]></title>
-    <link href="http://renatosousafilho.github.io/blog/2013/02/08/nodejs-usando-rest-com-express/"/>
+    <link href="http://renatosousafilho.github.com/blog/2013/02/08/nodejs-usando-rest-com-express/"/>
     <updated>2013-02-08T08:46:00-03:00</updated>
-    <id>http://renatosousafilho.github.io/blog/2013/02/08/nodejs-usando-rest-com-express</id>
+    <id>http://renatosousafilho.github.com/blog/2013/02/08/nodejs-usando-rest-com-express</id>
     <content type="html"><![CDATA[<p>O atual contexto das aplicações webs é capaz de forncecer bem mais do que o processamento de páginas, em um contexto em que estamos cercados por redes sociais e web-services, pensar numa aplicação além de conteúdo HTML é nescessário. Gigantes como o Facebook e o Twitter são bastantes disseminados por permitir a extensão de suas funcionalidades para outras aplicações através de suas próprias APIs, permitindo que outros desenvolvedores utilizem seus recursos para desenvolver novas aplicações. Aí que entra o REST, um padrão de processamento de requisições que pode tranformar sua aplicação em uma eficaz API, de forma simples e bem transparente. O conceito de REST é um pouco abrangente, mas em uma definĩção curta e grossa é uma forma de associamos um recurso de uma aplicação através de um identificador único(caso queira saber mais sobre REST, leia <a href="http://www.infoq.com/br/articles/rest-introduction">este artigo</a>.)</p>
 
 
@@ -228,18 +228,18 @@ console.log("Application is running in http://localhost:3000");
 
 <p><pre><code>
 node server.js
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X -d &ldquo;name=Jovem Nerd&rdquo; ṔOST <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X -d &ldquo;name=Azaghal&rdquo; ṔOST <a href="http://localhost/contacts  ">http://localhost/contacts  </a>
-curl -X -d &ldquo;name=Gaveta&rdquo; ṔOST <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X PUT -d &ldquo;name=Alexandre Ottoni&rdquo; <a href="http://localhost/contacts/1">http://localhost/contacts/1</a>
-[{id:1, name:&ldquo;Jovem Nerd&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;},{id:3, name:&ldquo;Gaveta&rdquo;}]
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-[{id:1, name:&ldquo;Alexandre Ottoni&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;},{id:3, name:&ldquo;Gaveta&rdquo;}]
-curl -X DELETE <a href="http://localhost/contacts/3">http://localhost/contacts/3</a>
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-[{id:1, name:&ldquo;Alexandre Ottoni&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;}]
+curl -X GET http://localhost/contacts <br/>
+curl -X -d "name=Jovem Nerd" ṔOST http://localhost/contacts <br/>
+curl -X -d "name=Azaghal" ṔOST http://localhost/contacts<br/>
+curl -X -d "name=Gaveta" ṔOST http://localhost/contacts <br/>
+curl -X GET http://localhost/contacts <br/>
+curl -X PUT -d "name=Alexandre Ottoni" http://localhost/contacts/1
+[{id:1, name:"Jovem Nerd"}, {id:2, name:"Azaghal"},{id:3, name:"Gaveta"}]
+curl -X GET http://localhost/contacts <br/>
+[{id:1, name:"Alexandre Ottoni"}, {id:2, name:"Azaghal"},{id:3, name:"Gaveta"}]
+curl -X DELETE http://localhost/contacts/3
+curl -X GET http://localhost/contacts <br/>
+[{id:1, name:"Alexandre Ottoni"}, {id:2, name:"Azaghal"}]
 </code></pre></p>
 
 <p><p>É isso aí pessoal, acima vemos a demonstração de uma singela aplicação REST que controla uma lista de contatos. Obviamente que se estívessesmos trablahando com alguma banco de dados o código seria um pouco diferente, porém o exemplo está aí para ilustrar o uso desse módulo do NodeJS.</p></p>
@@ -248,12 +248,12 @@ curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <b
   
   <entry>
     <title type="html"><![CDATA[Nodejs - Criando Um Servidor HTTP]]></title>
-    <link href="http://renatosousafilho.github.io/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/"/>
+    <link href="http://renatosousafilho.github.com/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/"/>
     <updated>2013-02-07T11:32:00-03:00</updated>
-    <id>http://renatosousafilho.github.io/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao</id>
+    <id>http://renatosousafilho.github.com/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao</id>
     <content type="html"><![CDATA[<p><p>O passo inicial para criar uma aplicação com nodejs é utilizando o módulo de http. Este módulo possui funcões para que possamos lidar com requisições em uma determinada porta do servidor, para isso vamos conhecer o básico de sua API.
 Para fazer uso do módulo de HTTP, precisamos antes carregarmos em um objeto, através do uso do método require. Como vemos abaixo:
-<pre><code>var http = require(&lsquo;http&rsquo;);<br/>
+<pre><code>var http = require('http');<br/>
 </code></pre></p>
 
 <p><p>Agora é onde começa nossa implementação. Por padrão o http requer uma funcão que receba como parametros dois obejtos: <strong>request</strong> e <strong>response</strong>, dessa forma temos que escrever algo deste tipo:</p>
@@ -276,7 +276,7 @@ response.end();
 <p><p><i>Observação: certifique-se de que a porta utilizada no parâmetro já não está sendo utilizada por outro serviço da sua máquina como um servidor apache ou algum outro tipo de Serviço</i> </p></p>
 
 <p><p>Pronto, desta forma temos nosso arquivo server.js, como segue abaixo:</p>
-<pre><code>var http = require(&lsquo;http&rsquo;);
+<pre><code>var http = require('http');
 function handleRequest(request,response){</p>
 
 <pre><code>response.writeHead(200);
@@ -292,12 +292,12 @@ server.listen(8080);
 <p><p>Para executarmos nosso servidor, basta usar o comando:</p>
 <pre><code>node server.js</code></pre></p>
 
-<p><p>E acessar a url <a href="http://localhost:8080">http://localhost:8080</a> e lá estará nosso primeiro exemplo de servidor.
+<p><p>E acessar a url http://localhost:8080 e lá estará nosso primeiro exemplo de servidor.
 </p></p>
 
 <p><p>Como o javascript possui uma síntaxe bem felixível podemos simplificar o código acima para esta forma.</p>
 <pre>
-var http = require(&lsquo;http&rsquo;);
+var http = require('http');
 http.createServer(function(request,response){</p>
 
 <pre><code>response.writeHead(200);
@@ -308,15 +308,15 @@ response.end();
 <p>}).listen(8080);
 </pre></p>
 
-<p><p>O módulo de HTTP do Nodejs possui uma extensa API que abrange várias funcionalidades do famoso protocolo de transferência de hipertexto, para mais informações confira a documentaçaõ oficial. (<a href="http://nodejs.org/api/http.html"><a href="http://nodejs.org/api/http.html">http://nodejs.org/api/http.html</a></a>)</p></p>
+<p><p>O módulo de HTTP do Nodejs possui uma extensa API que abrange várias funcionalidades do famoso protocolo de transferência de hipertexto, para mais informações confira a documentaçaõ oficial. (<a href="http://nodejs.org/api/http.html">http://nodejs.org/api/http.html</a>)</p></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Nodejs - Primeiros Passos]]></title>
-    <link href="http://renatosousafilho.github.io/blog/2013/02/07/nodejs-primeiros-passos/"/>
+    <link href="http://renatosousafilho.github.com/blog/2013/02/07/nodejs-primeiros-passos/"/>
     <updated>2013-02-07T11:30:00-03:00</updated>
-    <id>http://renatosousafilho.github.io/blog/2013/02/07/nodejs-primeiros-passos</id>
+    <id>http://renatosousafilho.github.com/blog/2013/02/07/nodejs-primeiros-passos</id>
     <content type="html"><![CDATA[<p>
     O Nodejs foi uma das coisas mais bacanas a respeito de desenvolvimento para Web que conheci ultimamente. Trata-se de uma plataforma que permite desenvolver aplicações do lado do servidor usando apenas Javascript. O Nodejs foi construido com a engine de javascript do Google, V8, sendo este o que permite a escrita de Javascript para server-side. Fico devendo um outro post falando melhor sobre o v8, mas por enquanto vamos ao que interessa.
 </p>
@@ -370,9 +370,9 @@ response.end();
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://renatosousafilho.github.io/blog/2013/02/07/hello-world/"/>
+    <link href="http://renatosousafilho.github.com/blog/2013/02/07/hello-world/"/>
     <updated>2013-02-07T11:11:00-03:00</updated>
-    <id>http://renatosousafilho.github.io/blog/2013/02/07/hello-world</id>
+    <id>http://renatosousafilho.github.com/blog/2013/02/07/hello-world</id>
     <content type="html"><![CDATA[<p style="text-align: justify">Este é um blog que fiz para compartilhar meu aprendizado a respeito do desenvolvimento de aplicações para web e mobile, principalmente no que diz respeito a linguagens como Ruby e Javascript. Nos posts que virão a serguir teremos posts falando sobre Ruby on Rails, Backbone.js, Sinatra, Nodejs, NoSQL e muitas outras coisas. portanto:</p>
 
 

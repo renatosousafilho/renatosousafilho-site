@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Nodejs | My Octopress Blog]]></title>
-  <link href="http://renatosousafilho.github.io/blog/categories/nodejs/atom.xml" rel="self"/>
-  <link href="http://renatosousafilho.github.io/"/>
-  <updated>2013-12-13T09:08:19-03:00</updated>
-  <id>http://renatosousafilho.github.io/</id>
+  <title><![CDATA[Category: Nodejs | Renato Filho]]></title>
+  <link href="http://renatosousafilho.github.com/blog/categories/nodejs/atom.xml" rel="self"/>
+  <link href="http://renatosousafilho.github.com/"/>
+  <updated>2013-12-13T09:11:33-03:00</updated>
+  <id>http://renatosousafilho.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Renato Filho]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Nodejs - Usando REST Com Express]]></title>
-    <link href="http://renatosousafilho.github.io/blog/2013/02/08/nodejs-usando-rest-com-express/"/>
+    <link href="http://renatosousafilho.github.com/blog/2013/02/08/nodejs-usando-rest-com-express/"/>
     <updated>2013-02-08T08:46:00-03:00</updated>
-    <id>http://renatosousafilho.github.io/blog/2013/02/08/nodejs-usando-rest-com-express</id>
+    <id>http://renatosousafilho.github.com/blog/2013/02/08/nodejs-usando-rest-com-express</id>
     <content type="html"><![CDATA[<p>O atual contexto das aplicações webs é capaz de forncecer bem mais do que o processamento de páginas, em um contexto em que estamos cercados por redes sociais e web-services, pensar numa aplicação além de conteúdo HTML é nescessário. Gigantes como o Facebook e o Twitter são bastantes disseminados por permitir a extensão de suas funcionalidades para outras aplicações através de suas próprias APIs, permitindo que outros desenvolvedores utilizem seus recursos para desenvolver novas aplicações. Aí que entra o REST, um padrão de processamento de requisições que pode tranformar sua aplicação em uma eficaz API, de forma simples e bem transparente. O conceito de REST é um pouco abrangente, mas em uma definĩção curta e grossa é uma forma de associamos um recurso de uma aplicação através de um identificador único(caso queira saber mais sobre REST, leia <a href="http://www.infoq.com/br/articles/rest-introduction">este artigo</a>.)</p>
 
 
@@ -133,18 +133,18 @@ console.log("Application is running in http://localhost:3000");
 
 <p><pre><code>
 node server.js
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X -d &ldquo;name=Jovem Nerd&rdquo; ṔOST <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X -d &ldquo;name=Azaghal&rdquo; ṔOST <a href="http://localhost/contacts  ">http://localhost/contacts  </a>
-curl -X -d &ldquo;name=Gaveta&rdquo; ṔOST <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X PUT -d &ldquo;name=Alexandre Ottoni&rdquo; <a href="http://localhost/contacts/1">http://localhost/contacts/1</a>
-[{id:1, name:&ldquo;Jovem Nerd&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;},{id:3, name:&ldquo;Gaveta&rdquo;}]
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-[{id:1, name:&ldquo;Alexandre Ottoni&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;},{id:3, name:&ldquo;Gaveta&rdquo;}]
-curl -X DELETE <a href="http://localhost/contacts/3">http://localhost/contacts/3</a>
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-[{id:1, name:&ldquo;Alexandre Ottoni&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;}]
+curl -X GET http://localhost/contacts <br/>
+curl -X -d "name=Jovem Nerd" ṔOST http://localhost/contacts <br/>
+curl -X -d "name=Azaghal" ṔOST http://localhost/contacts<br/>
+curl -X -d "name=Gaveta" ṔOST http://localhost/contacts <br/>
+curl -X GET http://localhost/contacts <br/>
+curl -X PUT -d "name=Alexandre Ottoni" http://localhost/contacts/1
+[{id:1, name:"Jovem Nerd"}, {id:2, name:"Azaghal"},{id:3, name:"Gaveta"}]
+curl -X GET http://localhost/contacts <br/>
+[{id:1, name:"Alexandre Ottoni"}, {id:2, name:"Azaghal"},{id:3, name:"Gaveta"}]
+curl -X DELETE http://localhost/contacts/3
+curl -X GET http://localhost/contacts <br/>
+[{id:1, name:"Alexandre Ottoni"}, {id:2, name:"Azaghal"}]
 </code></pre></p>
 
 <p><p>É isso aí pessoal, acima vemos a demonstração de uma singela aplicação REST que controla uma lista de contatos. Obviamente que se estívessesmos trablahando com alguma banco de dados o código seria um pouco diferente, porém o exemplo está aí para ilustrar o uso desse módulo do NodeJS.</p></p>

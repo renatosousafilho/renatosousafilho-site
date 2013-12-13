@@ -1,43 +1,45 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://renatosousafilho.github.io/blog/2013/02/07/hello-world/</loc>
+        <loc>http://renatosousafilho.github.com/blog/2013/02/07/hello-world/</loc>
         <lastmod>2013-12-13T09:00:35-03:00</lastmod>
     </url>
     <url>
-        <loc>http://renatosousafilho.github.io/blog/2013/02/07/nodejs-primeiros-passos/</loc>
+        <loc>http://renatosousafilho.github.com/blog/2013/02/07/nodejs-primeiros-passos/</loc>
         <lastmod>2013-12-13T09:00:35-03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://renatosousafilho.github.io/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/
+            http://renatosousafilho.github.com/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/
         </loc>
         <lastmod>2013-12-13T09:00:35-03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://renatosousafilho.github.io/blog/2013/02/08/nodejs-usando-rest-com-express/
+            http://renatosousafilho.github.com/blog/2013/02/08/nodejs-usando-rest-com-express/
         </loc>
         <lastmod>2013-12-13T09:00:35-03:00</lastmod>
     </url>
     <url>
-        <loc>http://renatosousafilho.github.io/blog/2013/03/13/backbone-dot-js-introducao/</loc>
+        <loc>http://renatosousafilho.github.com/blog/2013/03/13/backbone-dot-js-introducao/</loc>
         <lastmod>2013-12-13T09:00:35-03:00</lastmod>
     </url>
     <url>
-        <loc>http://renatosousafilho.github.io/blog/2013/03/13/rack-uma-rapida-apresentacao/</loc>
+        <loc>
+            http://renatosousafilho.github.com/blog/2013/03/13/rack-uma-rapida-apresentacao/
+        </loc>
         <lastmod>2013-12-13T09:00:35-03:00</lastmod>
     </url>
     <url>
-        <loc>http://renatosousafilho.github.io/blog/archives/</loc>
+        <loc>http://renatosousafilho.github.com/blog/archives/</loc>
         <lastmod>2013-12-13T09:00:35-03:00</lastmod>
     </url>
     <url>
-        <loc>http://renatosousafilho.github.io/</loc>
+        <loc>http://renatosousafilho.github.com/</loc>
         <lastmod>2013-12-13T09:00:35-03:00</lastmod>
     </url>
     <url>
-        <loc>http://renatosousafilho.github.io/robots.txt</loc>
+        <loc>http://renatosousafilho.github.com/robots.txt</loc>
         <lastmod>2013-12-13T08:59:16-03:00</lastmod>
     </url>
 </urlset>

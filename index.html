@@ -5,8 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Renato Filho</title>
+  <meta name="author" content="Renato Filho">
 
   
   <meta name="description" content="Antes de começar a escrever qualquer coisa sobre Ruby on Rails ou Sinatra, decidi fazer um rápido estudo de algo que, particulamente, nunca dei a &hellip;">
@@ -18,10 +18,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://renatosousafilho.github.io">
+  <link rel="canonical" href="http://renatosousafilho.github.com">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Renato Filho" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -36,9 +36,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Renato Filho</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>Desenvolvimento Web e Mobile com Ruby e Javascript</h2>
   
 </hgroup>
 
@@ -50,7 +50,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:renatosousafilho.github.io" />
+    <input type="hidden" name="q" value="site:renatosousafilho.github.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -188,7 +188,7 @@ run HelloWorld.new
 
 <p>Como eu crio uma aplicação com Backbone.js?</p>
 
-<p>Para começar a criar uma aplicação com Backbone.js(<a href="http://backbonejs.org/">http://backbonejs.org/</a>), você precisa apenas do código da biblioteca  e do Underscore.js(<a href="http://underscorejs.org/">http://underscorejs.org/</a>),  uma dependência do Backbone.js. Tendo estes dois arquivos tudo que você precisa agora é de uma página html para começar sua aplicação.</p>
+<p>Para começar a criar uma aplicação com Backbone.js(http://backbonejs.org/), você precisa apenas do código da biblioteca  e do Underscore.js(http://underscorejs.org/),  uma dependência do Backbone.js. Tendo estes dois arquivos tudo que você precisa agora é de uma página html para começar sua aplicação.</p>
 
 <p><html>
 <head></p>
@@ -358,18 +358,18 @@ console.log("Application is running in http://localhost:3000");
 
 <p><pre><code>
 node server.js
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X -d &ldquo;name=Jovem Nerd&rdquo; ṔOST <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X -d &ldquo;name=Azaghal&rdquo; ṔOST <a href="http://localhost/contacts  ">http://localhost/contacts  </a>
-curl -X -d &ldquo;name=Gaveta&rdquo; ṔOST <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-curl -X PUT -d &ldquo;name=Alexandre Ottoni&rdquo; <a href="http://localhost/contacts/1">http://localhost/contacts/1</a>
-[{id:1, name:&ldquo;Jovem Nerd&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;},{id:3, name:&ldquo;Gaveta&rdquo;}]
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-[{id:1, name:&ldquo;Alexandre Ottoni&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;},{id:3, name:&ldquo;Gaveta&rdquo;}]
-curl -X DELETE <a href="http://localhost/contacts/3">http://localhost/contacts/3</a>
-curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
-[{id:1, name:&ldquo;Alexandre Ottoni&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;}]
+curl -X GET http://localhost/contacts <br/>
+curl -X -d "name=Jovem Nerd" ṔOST http://localhost/contacts <br/>
+curl -X -d "name=Azaghal" ṔOST http://localhost/contacts<br/>
+curl -X -d "name=Gaveta" ṔOST http://localhost/contacts <br/>
+curl -X GET http://localhost/contacts <br/>
+curl -X PUT -d "name=Alexandre Ottoni" http://localhost/contacts/1
+[{id:1, name:"Jovem Nerd"}, {id:2, name:"Azaghal"},{id:3, name:"Gaveta"}]
+curl -X GET http://localhost/contacts <br/>
+[{id:1, name:"Alexandre Ottoni"}, {id:2, name:"Azaghal"},{id:3, name:"Gaveta"}]
+curl -X DELETE http://localhost/contacts/3
+curl -X GET http://localhost/contacts <br/>
+[{id:1, name:"Alexandre Ottoni"}, {id:2, name:"Azaghal"}]
 </code></pre></p>
 
 <p><p>É isso aí pessoal, acima vemos a demonstração de uma singela aplicação REST que controla uma lista de contatos. Obviamente que se estívessesmos trablahando com alguma banco de dados o código seria um pouco diferente, porém o exemplo está aí para ilustrar o uso desse módulo do NodeJS.</p></p>
@@ -410,7 +410,7 @@ curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <b
 
   <div class="entry-content"><p><p>O passo inicial para criar uma aplicação com nodejs é utilizando o módulo de http. Este módulo possui funcões para que possamos lidar com requisições em uma determinada porta do servidor, para isso vamos conhecer o básico de sua API.
 Para fazer uso do módulo de HTTP, precisamos antes carregarmos em um objeto, através do uso do método require. Como vemos abaixo:
-<pre><code>var http = require(&lsquo;http&rsquo;);<br/>
+<pre><code>var http = require('http');<br/>
 </code></pre></p>
 
 <p><p>Agora é onde começa nossa implementação. Por padrão o http requer uma funcão que receba como parametros dois obejtos: <strong>request</strong> e <strong>response</strong>, dessa forma temos que escrever algo deste tipo:</p>
@@ -433,7 +433,7 @@ response.end();
 <p><p><i>Observação: certifique-se de que a porta utilizada no parâmetro já não está sendo utilizada por outro serviço da sua máquina como um servidor apache ou algum outro tipo de Serviço</i> </p></p>
 
 <p><p>Pronto, desta forma temos nosso arquivo server.js, como segue abaixo:</p>
-<pre><code>var http = require(&lsquo;http&rsquo;);
+<pre><code>var http = require('http');
 function handleRequest(request,response){</p>
 
 <pre><code>response.writeHead(200);
@@ -449,12 +449,12 @@ server.listen(8080);
 <p><p>Para executarmos nosso servidor, basta usar o comando:</p>
 <pre><code>node server.js</code></pre></p>
 
-<p><p>E acessar a url <a href="http://localhost:8080">http://localhost:8080</a> e lá estará nosso primeiro exemplo de servidor.
+<p><p>E acessar a url http://localhost:8080 e lá estará nosso primeiro exemplo de servidor.
 </p></p>
 
 <p><p>Como o javascript possui uma síntaxe bem felixível podemos simplificar o código acima para esta forma.</p>
 <pre>
-var http = require(&lsquo;http&rsquo;);
+var http = require('http');
 http.createServer(function(request,response){</p>
 
 <pre><code>response.writeHead(200);
@@ -465,7 +465,7 @@ response.end();
 <p>}).listen(8080);
 </pre></p>
 
-<p><p>O módulo de HTTP do Nodejs possui uma extensa API que abrange várias funcionalidades do famoso protocolo de transferência de hipertexto, para mais informações confira a documentaçaõ oficial. (<a href="http://nodejs.org/api/http.html"><a href="http://nodejs.org/api/http.html">http://nodejs.org/api/http.html</a></a>)</p></p>
+<p><p>O módulo de HTTP do Nodejs possui uma extensa API que abrange várias funcionalidades do famoso protocolo de transferência de hipertexto, para mais informações confira a documentaçaõ oficial. (<a href="http://nodejs.org/api/http.html">http://nodejs.org/api/http.html</a>)</p></p>
 </div>
   
   
@@ -634,7 +634,7 @@ response.end();
   </ul>
 </section>
 
-
+Included file &#8216;asides/twitter.html&#8217; not found in _includes directory
 
 
 
@@ -644,7 +644,7 @@ response.end();
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Your Name -
+  Copyright &copy; 2013 - Renato Filho -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

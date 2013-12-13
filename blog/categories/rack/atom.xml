@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Rack, | My Octopress Blog]]></title>
-  <link href="http://renatosousafilho.github.io/blog/categories/rack/atom.xml" rel="self"/>
-  <link href="http://renatosousafilho.github.io/"/>
-  <updated>2013-12-13T09:08:19-03:00</updated>
-  <id>http://renatosousafilho.github.io/</id>
+  <title><![CDATA[Category: Rack, | Renato Filho]]></title>
+  <link href="http://renatosousafilho.github.com/blog/categories/rack/atom.xml" rel="self"/>
+  <link href="http://renatosousafilho.github.com/"/>
+  <updated>2013-12-13T09:11:33-03:00</updated>
+  <id>http://renatosousafilho.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Renato Filho]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Rack - Uma Rápida Apresentação]]></title>
-    <link href="http://renatosousafilho.github.io/blog/2013/03/13/rack-uma-rapida-apresentacao/"/>
+    <link href="http://renatosousafilho.github.com/blog/2013/03/13/rack-uma-rapida-apresentacao/"/>
     <updated>2013-03-13T14:26:00-03:00</updated>
-    <id>http://renatosousafilho.github.io/blog/2013/03/13/rack-uma-rapida-apresentacao</id>
+    <id>http://renatosousafilho.github.com/blog/2013/03/13/rack-uma-rapida-apresentacao</id>
     <content type="html"><![CDATA[<p>Antes de começar a escrever qualquer coisa sobre Ruby on Rails ou Sinatra, decidi fazer um rápido estudo de algo que, particulamente, nunca dei a devida atenção até então, a Gem que permite o desenvolvimento do lado do Servidor com ruby, o Rack.</p>
 
 
