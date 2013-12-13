@@ -4,17 +4,17 @@
   <title><![CDATA[Renato Filho]]></title>
   <link href="http://renatosousafilho.github.com/atom.xml" rel="self"/>
   <link href="http://renatosousafilho.github.com/"/>
-  <updated>2013-12-13T09:11:33-03:00</updated>
+  <updated>2013-12-13T10:19:46-03:00</updated>
   <id>http://renatosousafilho.github.com/</id>
   <author>
     <name><![CDATA[Renato Filho]]></name>
-    
+    <email><![CDATA[renatoprogweb@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[Rack - Uma Rápida Apresentação]]></title>
+    <title type="html"><![CDATA[Rack - Uma rápida apresentação]]></title>
     <link href="http://renatosousafilho.github.com/blog/2013/03/13/rack-uma-rapida-apresentacao/"/>
     <updated>2013-03-13T14:26:00-03:00</updated>
     <id>http://renatosousafilho.github.com/blog/2013/03/13/rack-uma-rapida-apresentacao</id>
@@ -109,7 +109,7 @@ run HelloWorld.new
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Nodejs - Usando REST Com Express]]></title>
+    <title type="html"><![CDATA[Nodejs - Usando REST com express]]></title>
     <link href="http://renatosousafilho.github.com/blog/2013/02/08/nodejs-usando-rest-com-express/"/>
     <updated>2013-02-08T08:46:00-03:00</updated>
     <id>http://renatosousafilho.github.com/blog/2013/02/08/nodejs-usando-rest-com-express</id>
@@ -247,7 +247,7 @@ curl -X GET http://localhost/contacts <br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Nodejs - Criando Um Servidor HTTP]]></title>
+    <title type="html"><![CDATA[Nodejs - Criando um servidor HTTP ]]></title>
     <link href="http://renatosousafilho.github.com/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/"/>
     <updated>2013-02-07T11:32:00-03:00</updated>
     <id>http://renatosousafilho.github.com/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao</id>
@@ -313,7 +313,7 @@ response.end();
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Nodejs - Primeiros Passos]]></title>
+    <title type="html"><![CDATA[Nodejs - Primeiros passos]]></title>
     <link href="http://renatosousafilho.github.com/blog/2013/02/07/nodejs-primeiros-passos/"/>
     <updated>2013-02-07T11:30:00-03:00</updated>
     <id>http://renatosousafilho.github.com/blog/2013/02/07/nodejs-primeiros-passos</id>

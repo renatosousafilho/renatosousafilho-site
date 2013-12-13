@@ -1,100 +1,137 @@
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Renato Filho</title>
-  <meta name="author" content="Renato Filho">
+	<meta charset="utf-8">
+	<title>Renato Filho</title>
+	<meta name="author" content="Renato Filho">
 
-  
-  <meta name="description" content="Antes de começar a escrever qualquer coisa sobre Ruby on Rails ou Sinatra, decidi fazer um rápido estudo de algo que, particulamente, nunca dei a &hellip;">
-  
+	
+	<meta name="description" content="Rack - Uma Rápida Apresentação Antes de começar a escrever qualquer coisa sobre Ruby on Rails ou Sinatra, decidi fazer um rápido estudo de algo que &hellip;">
+	
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-  <link rel="canonical" href="http://renatosousafilho.github.com">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Renato Filho" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+	<link href="/atom.xml" rel="alternate" title="Renato Filho" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://renatosousafilho.github.com/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
-  
-
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Renato Filho</a></h1>
-  
-    <h2>Desenvolvimento Web e Mobile com Ruby e Javascript</h2>
-  
-</hgroup>
 
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:renatosousafilho.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><nav id="main-nav"><ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
 </ul>
-
 </nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
+<!-- <nav id="sub-nav">
+	<div class="social">
+		
+		<a class="facebook" href="http://www.facebook.com/renatosousafilho" title="Facebook">Facebook</a>
+		
+		
+		<a class="google" href="https://plus.google.com/+RenatoFilhoProg" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/renatosousafh" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/renatosousafilho" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav> -->
+<div class="profile-container">
+  <div class="profilepic">
+    <script src="/javascripts/md5.js"></script>
+    <script type="text/javascript">
+$(function(){
+  $('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("renatoprogweb@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+});
+    </script>
+  </div>
+  <hgroup>
+  <h1 class="site-title"><a href="/">Renato Filho</a></h1>
   
+  <p class="site-subtitle">Desenvolvimento Web e Mobile com Ruby e Javascript</p>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/13/rack-uma-rapida-apresentacao/">Rack - Uma Rápida Apresentação</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
+  </hgroup>
   
 
+<div class="social">
+                
 
-<time datetime="2013-03-13T14:26:00-03:00" pubdate data-updated="true">Mar 13<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
+                        <a class="facebook" href="http://www.facebook.com/renatosousafilho" title="Facebook"><img src="images/social/facebook.png"></a>
+                
+                
+                        <a class="google" href="https://plus.google.com/+RenatoFilhoProg" rel="author" title="Google+"><img src="images/social/googleplus.png"></a>
+                
+                
+                        <a class="twitter" href="http://twitter.com/renatosousafh" title="Twitter"><img src="images/social/twitter.png"></a>
+                
+                
+                        <a class="github" href="https://github.com/renatosousafilho" title="GitHub"><img src="images/social/github.png"></a>
+                
+                
+                
+                        <a class="rss" href="/atom.xml" title="RSS"><img src="images/social/rss.png"></a>
+                
+        </div>
+</div>
+</header>
+			</div>
+		</div>
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/renatosousafh">renatosousafh</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('renatosousafh', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="article-inner">
+<div itemscope itemtype="http://schema.org/Blog">
 
 
-  <div class="entry-content"><p>Antes de começar a escrever qualquer coisa sobre Ruby on Rails ou Sinatra, decidi fazer um rápido estudo de algo que, particulamente, nunca dei a devida atenção até então, a Gem que permite o desenvolvimento do lado do Servidor com ruby, o Rack.</p>
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name"><a href="/blog/2013/03/13/rack-uma-rapida-apresentacao/" itemprop="url">Rack - Uma Rápida Apresentação</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Antes de começar a escrever qualquer coisa sobre Ruby on Rails ou Sinatra, decidi fazer um rápido estudo de algo que, particulamente, nunca dei a devida atenção até então, a Gem que permite o desenvolvimento do lado do Servidor com ruby, o Rack.</p>
 
 
 <p>Similar ao último post sobre nodejs, não faremos nada de tão avançado, vamos apenas nos apresentarmos a este recurso do Ruby que é de suma importância para o funcionamento dos seus já citados e famosos frameworks. O Rack serve como uma camada intermediária entre um código ruby e um servidor web através de sua API. O primeiro passo para sua utilização, com o ruby devidamente instalado é instalar a gem.</p>
@@ -141,42 +178,18 @@ run HelloWorld.new
 
 
 
-</div>
-  
-  
+
+		
+		
+	</div>
+
+</article>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/13/backbone-dot-js-introducao/">Backbone.js - Introdução</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-13T11:20:00-03:00" pubdate data-updated="true">Mar 13<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Neste post apresentarei um pouco sobre esta biblioteca Javascript que nos permite trazer o padrão MVC para o desenvolvimento com JavaScript. Lógico que não é a única biblioteca com essa proposta e dizer que ele é um dos mais importantes pode acabar sendo discordado para outros desenvolvedores, mas uma coisa é certa, dentre todos as bibliotecas ela é a mais simples e funcional, servindo também para um bom ponto de partida se você quiser estudar outras bibliotecas e frameworks similares como o Meteor, Batman.js, Sencha, entre outras.</p>
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name"><a href="/blog/2013/03/13/backbone-dot-js-introducao/" itemprop="url">Backbone.js - Introdução</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Neste post apresentarei um pouco sobre esta biblioteca Javascript que nos permite trazer o padrão MVC para o desenvolvimento com JavaScript. Lógico que não é a única biblioteca com essa proposta e dizer que ele é um dos mais importantes pode acabar sendo discordado para outros desenvolvedores, mas uma coisa é certa, dentre todos as bibliotecas ela é a mais simples e funcional, servindo também para um bom ponto de partida se você quiser estudar outras bibliotecas e frameworks similares como o Meteor, Batman.js, Sencha, entre outras.</p>
 
 <p>Para começar a desenvolver usando o Backbone.js tudo que você precisa saber é um pouco de JSON e Javascript, e de jQuery, porém se você não for tão familiarizado, o estudo de Backbone.js pode matar dois coelhos com uma cajadada só, como foi meu caso. Então vamos conhecer o que podemos fazer com Backbone.js.</p>
 
@@ -208,42 +221,18 @@ run HelloWorld.new
 </html></p>
 
 <p>A partir daí já podemos começar a escrever nossa aplicação. No nosso próximo post veremos um pouco  sobre modelos. Até lá.</p>
-</div>
-  
-  
+
+		
+		
+	</div>
+
+</article>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/08/nodejs-usando-rest-com-express/">Nodejs - Usando REST Com Express</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-08T08:46:00-03:00" pubdate data-updated="true">Feb 8<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>O atual contexto das aplicações webs é capaz de forncecer bem mais do que o processamento de páginas, em um contexto em que estamos cercados por redes sociais e web-services, pensar numa aplicação além de conteúdo HTML é nescessário. Gigantes como o Facebook e o Twitter são bastantes disseminados por permitir a extensão de suas funcionalidades para outras aplicações através de suas próprias APIs, permitindo que outros desenvolvedores utilizem seus recursos para desenvolver novas aplicações. Aí que entra o REST, um padrão de processamento de requisições que pode tranformar sua aplicação em uma eficaz API, de forma simples e bem transparente. O conceito de REST é um pouco abrangente, mas em uma definĩção curta e grossa é uma forma de associamos um recurso de uma aplicação através de um identificador único(caso queira saber mais sobre REST, leia <a href="http://www.infoq.com/br/articles/rest-introduction">este artigo</a>.)</p>
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name"><a href="/blog/2013/02/08/nodejs-usando-rest-com-express/" itemprop="url">Nodejs - Usando REST Com Express</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>O atual contexto das aplicações webs é capaz de forncecer bem mais do que o processamento de páginas, em um contexto em que estamos cercados por redes sociais e web-services, pensar numa aplicação além de conteúdo HTML é nescessário. Gigantes como o Facebook e o Twitter são bastantes disseminados por permitir a extensão de suas funcionalidades para outras aplicações através de suas próprias APIs, permitindo que outros desenvolvedores utilizem seus recursos para desenvolver novas aplicações. Aí que entra o REST, um padrão de processamento de requisições que pode tranformar sua aplicação em uma eficaz API, de forma simples e bem transparente. O conceito de REST é um pouco abrangente, mas em uma definĩção curta e grossa é uma forma de associamos um recurso de uma aplicação através de um identificador único(caso queira saber mais sobre REST, leia <a href="http://www.infoq.com/br/articles/rest-introduction">este artigo</a>.)</p>
 
 
 
@@ -373,42 +362,18 @@ curl -X GET http://localhost/contacts <br/>
 </code></pre></p>
 
 <p><p>É isso aí pessoal, acima vemos a demonstração de uma singela aplicação REST que controla uma lista de contatos. Obviamente que se estívessesmos trablahando com alguma banco de dados o código seria um pouco diferente, porém o exemplo está aí para ilustrar o uso desse módulo do NodeJS.</p></p>
-</div>
-  
-  
+
+		
+		
+	</div>
+
+</article>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/">Nodejs - Criando Um Servidor HTTP</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-07T11:32:00-03:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><p>O passo inicial para criar uma aplicação com nodejs é utilizando o módulo de http. Este módulo possui funcões para que possamos lidar com requisições em uma determinada porta do servidor, para isso vamos conhecer o básico de sua API.
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name"><a href="/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/" itemprop="url">Nodejs - Criando Um Servidor HTTP</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><p>O passo inicial para criar uma aplicação com nodejs é utilizando o módulo de http. Este módulo possui funcões para que possamos lidar com requisições em uma determinada porta do servidor, para isso vamos conhecer o básico de sua API.
 Para fazer uso do módulo de HTTP, precisamos antes carregarmos em um objeto, através do uso do método require. Como vemos abaixo:
 <pre><code>var http = require('http');<br/>
 </code></pre></p>
@@ -466,42 +431,18 @@ response.end();
 </pre></p>
 
 <p><p>O módulo de HTTP do Nodejs possui uma extensa API que abrange várias funcionalidades do famoso protocolo de transferência de hipertexto, para mais informações confira a documentaçaõ oficial. (<a href="http://nodejs.org/api/http.html">http://nodejs.org/api/http.html</a>)</p></p>
-</div>
-  
-  
+
+		
+		
+	</div>
+
+</article>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/07/nodejs-primeiros-passos/">Nodejs - Primeiros Passos</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-07T11:30:00-03:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name"><a href="/blog/2013/02/07/nodejs-primeiros-passos/" itemprop="url">Nodejs - Primeiros Passos</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>
     O Nodejs foi uma das coisas mais bacanas a respeito de desenvolvimento para Web que conheci ultimamente. Trata-se de uma plataforma que permite desenvolver aplicações do lado do servidor usando apenas Javascript. O Nodejs foi construido com a engine de javascript do Google, V8, sendo este o que permite a escrita de Javascript para server-side. Fico devendo um outro post falando melhor sobre o v8, mas por enquanto vamos ao que interessa.
 </p>
 
@@ -549,42 +490,18 @@ response.end();
     Nos próximos posts falaremos como começar a criar uma aplicação server-side utilizando o nodejs. Até lá&#8230;
 </p>
 
-</div>
-  
-  
+
+		
+		
+	</div>
+
+</article>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/07/hello-world/">Hello World</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-07T11:11:00-03:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p style="text-align: justify">Este é um blog que fiz para compartilhar meu aprendizado a respeito do desenvolvimento de aplicações para web e mobile, principalmente no que diz respeito a linguagens como Ruby e Javascript. Nos posts que virão a serguir teremos posts falando sobre Ruby on Rails, Backbone.js, Sinatra, Nodejs, NoSQL e muitas outras coisas. portanto:</p>
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name"><a href="/blog/2013/02/07/hello-world/" itemprop="url">Hello World</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p style="text-align: justify">Este é um blog que fiz para compartilhar meu aprendizado a respeito do desenvolvimento de aplicações para web e mobile, principalmente no que diz respeito a linguagens como Ruby e Javascript. Nos posts que virão a serguir teremos posts falando sobre Ruby on Rails, Backbone.js, Sinatra, Nodejs, NoSQL e muitas outras coisas. portanto:</p>
 
 
 <pre><code>(function(){
@@ -592,64 +509,35 @@ response.end();
 })();      
 </code></pre>
 
+
+		
+		
+	</div>
+
+</article>
+
 </div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
+<nav id="pagenavi">
     
-    <a href="/blog/archives">Blog Archives</a>
     
-  </div>
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav>
 </div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/03/13/rack-uma-rapida-apresentacao/">Rack - Uma Rápida Apresentação</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/13/backbone-dot-js-introducao/">Backbone.js - Introdução</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/08/nodejs-usando-rest-com-express/">Nodejs - Usando REST Com Express</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/">Nodejs - Criando Um Servidor HTTP</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/07/nodejs-primeiros-passos/">Nodejs - Primeiros Passos</a>
-      </li>
-    
-  </ul>
-</section>
-
-Included file &#8216;asides/twitter.html&#8217; not found in _includes directory
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
+			</div>
+			<footer id="footer" class="inner"><p>
   Copyright &copy; 2013 - Renato Filho -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
+<p>Theme: <a href="https://github.com/qingwang/octopress-theme-yinyang">YinYang</a></p>
 </footer>
-  
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
 
 
 
@@ -657,19 +545,7 @@ Included file &#8216;asides/twitter.html&#8217; not found in _includes directory
 
 
 
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
+		</div>
+	</div>
 </body>
 </html>
