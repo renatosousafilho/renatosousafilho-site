@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://renatosousafilho.github.io/sitemap.xml 
