@@ -9,7 +9,8 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,575 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/13/teste/">Teste</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-13T14:53:00-03:00" pubdate data-updated="true">Mar 13<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/13/rack-uma-rapida-apresentacao/">Rack - Uma Rápida Apresentação</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-13T14:26:00-03:00" pubdate data-updated="true">Mar 13<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Antes de começar a escrever qualquer coisa sobre Ruby on Rails ou Sinatra, decidi fazer um rápido estudo de algo que, particulamente, nunca dei a devida atenção até então, a Gem que permite o desenvolvimento do lado do Servidor com ruby, o Rack.</p>
+
+
+<p>Similar ao último post sobre nodejs, não faremos nada de tão avançado, vamos apenas nos apresentarmos a este recurso do Ruby que é de suma importância para o funcionamento dos seus já citados e famosos frameworks. O Rack serve como uma camada intermediária entre um código ruby e um servidor web através de sua API. O primeiro passo para sua utilização, com o ruby devidamente instalado é instalar a gem.</p>
+
+
+<pre><code>gem install rack</code></pre>
+
+
+<p>Seguindo o padrão de qualquer servidor, o código que irá criar nosso servidor deve implementar um tratamento para uma requisição para processar e devolver uma resposta para o cliente. A estrutura básica de qualquer servidor implementado com Rack consiste em criar uma classe com um método &#8216;call&#8217; que receba uma hash com as informações da requisição e que retorne uma outra hash com uma resposta para o usuário, que deve incluir informaçoes do cabeçalho e do corpo.</p>
+
+
+<pre><code># hello_world.rb
+class HelloWorld
+   def call(env)
+     [200,{"Content-Type":"200"},["Hello World!"]]
+    end
+end
+</code></pre>
+
+
+<p>Agora basta escrevermos o arquivo config.ru que será usado para subir nossa aplicação.</p>
+
+
+<pre><code># config.ru
+require 'rack'
+require './hello_world.rb'
+
+run HelloWorld.new
+</code></pre>
+
+
+
+
+<p>Para subirmos a aplicação basta utilizar o comando:</p>
+
+
+<pre><code>rackup config.ru</code></pre>
+
+
+
+
+<p>A aplicação vai ser iniciada por padrão na porta 9292 e ao acessarmos  http://localhost:9292, teremos nossa aplicação retornando a mensagem espeficicada. Embora o Ruby on Rails e o Sinatra já implemetem o Rack por baixo dos panos é importante conhecermos um pouco a respeito, pois usando o Rack podemos criar nossos pŕoprios frameworks escritos em Ruby ou mesmo para fazermos algum tipo de alteração no core dos frameworks já existentes.
+</p>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/13/backbone-dot-js-introducao/">Backbone.js - Introdução</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-13T11:20:00-03:00" pubdate data-updated="true">Mar 13<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Neste post apresentarei um pouco sobre esta biblioteca Javascript que nos permite trazer o padrão MVC para o desenvolvimento com JavaScript. Lógico que não é a única biblioteca com essa proposta e dizer que ele é um dos mais importantes pode acabar sendo discordado para outros desenvolvedores, mas uma coisa é certa, dentre todos as bibliotecas ela é a mais simples e funcional, servindo também para um bom ponto de partida se você quiser estudar outras bibliotecas e frameworks similares como o Meteor, Batman.js, Sencha, entre outras.</p>
+
+<p>Para começar a desenvolver usando o Backbone.js tudo que você precisa saber é um pouco de JSON e Javascript, e de jQuery, porém se você não for tão familiarizado, o estudo de Backbone.js pode matar dois coelhos com uma cajadada só, como foi meu caso. Então vamos conhecer o que podemos fazer com Backbone.js.</p>
+
+<p>MVC ou não é MVC?</p>
+
+<p>Bom, eu acredito que na prática nem tudo se encaixa 100% do que o nome sugere, o Backbone traz na sua utilização alguns conceitos de MVC, por mais que não seja igual ao MVC que estamos habituados, o Modelo, o Controlador e a Visão. Em termos prático, o C representaria o Collection, classe do Backbone que conhecermos melhor mais a frente. Enfim, é mais um detalhe de etimologia que não vai nos influir tanto, mas serve para já nos prepararmos que o desenvolvimento com Backbone.js não é exatamente igual a frameworks MVC como o Rails ou Django porém possua várias similaridades.</p>
+
+<p>Como nem tudo são flores, existe uma peculiaridade do Backbone.js que não chega a ser exatamente um problema, justamente a sua natureza. Ele não é um framework, apenas uma biblioteca, o que quero dizer com isso é que não existe um padrão preestabelecido para organização do seu código. Você pode encontrar uma ou outra especificação, mas originalmente a proposta do Backbone é oferecer uma API para desenvolver o código mais modularizado com o uso. O que quero dizer com isso é que você tem a liberdade de escrever uma aplicação inteira em uma única página ou separar em vários scripts e páginas diferentes. A medida que você ganhar familiaridade com Backbone você pode acabar encontrando uma forma que lhe agrade mais. Mas não existe padrão para o Backbone.</p>
+
+<p>Como eu crio uma aplicação com Backbone.js?</p>
+
+<p>Para começar a criar uma aplicação com Backbone.js(<a href="http://backbonejs.org/">http://backbonejs.org/</a>), você precisa apenas do código da biblioteca  e do Underscore.js(<a href="http://underscorejs.org/">http://underscorejs.org/</a>),  uma dependência do Backbone.js. Tendo estes dois arquivos tudo que você precisa agora é de uma página html para começar sua aplicação.</p>
+
+<p><html>
+<head></p>
+
+<pre><code>&lt;title&gt;Backbone Beginner&lt;/title&gt;
+&lt;script src="./backbone-min.js" type="text/javascript" charset="utf-8" &gt;&lt;/script&gt;
+&lt;script src="./underscore-min.js" type="text/javascript" charset="utf-8" &gt;&lt;/script&gt;
+</code></pre>
+
+<p></head>
+<body></p>
+
+<pre><code>Let's learn about Backbone.js
+</code></pre>
+
+<p></body>
+</html></p>
+
+<p>A partir daí já podemos começar a escrever nossa aplicação. No nosso próximo post veremos um pouco  sobre modelos. Até lá.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/08/nodejs-usando-rest-com-express/">Nodejs - Usando REST Com Express</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-08T08:46:00-03:00" pubdate data-updated="true">Feb 8<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>O atual contexto das aplicações webs é capaz de forncecer bem mais do que o processamento de páginas, em um contexto em que estamos cercados por redes sociais e web-services, pensar numa aplicação além de conteúdo HTML é nescessário. Gigantes como o Facebook e o Twitter são bastantes disseminados por permitir a extensão de suas funcionalidades para outras aplicações através de suas próprias APIs, permitindo que outros desenvolvedores utilizem seus recursos para desenvolver novas aplicações. Aí que entra o REST, um padrão de processamento de requisições que pode tranformar sua aplicação em uma eficaz API, de forma simples e bem transparente. O conceito de REST é um pouco abrangente, mas em uma definĩção curta e grossa é uma forma de associamos um recurso de uma aplicação através de um identificador único(caso queira saber mais sobre REST, leia <a href="http://www.infoq.com/br/articles/rest-introduction">este artigo</a>.)</p>
+
+
+
+
+<h3>Criando nossa aplicãção</h3>
+
+
+
+
+<p>O Express é um módulo do nodejs que nos permite escrever uma aplicação utilizando o padrão REST. Bastante similar ao Sinatra, framework para aplicações web do Ruby, ele consiste em especificar um comportamento para uma determinada URL de nossa aplicação. Mas antes devemos especificar as dependências de nossa aplicação da seguinte forma:</p>
+
+
+
+
+<pre><code># package.json
+{
+  "name": "express-beginner",
+  "description": "Apllication to show how to begin with express",
+  "version": "0.0.1",
+  "dependencies": {
+     "express": "3.x"
+  }
+}
+</code></pre>
+
+
+<p>Agora vamos criar o código de nossa aplicação. Por ora, iremos fazer o mapeamento da url <u>http://localhost:3000/</u> para exibir a string &#8220;Hello World&#8221;.
+</p>
+
+
+
+
+<pre><code># server.js
+var express = require("express");
+var app = express();
+
+app.get("/", function(req, res){
+   res.send("Hello World! \n")
+});
+
+app.listen(3000);
+console.log("Application is running in http://localhost:3000");
+</code></pre>
+
+
+
+
+<p>Podemos acessar a rota criada fazendo um requisicão para a URL http://localhost:3000 através do browser ou através do cURL.</p>
+
+
+
+
+<pre><code>curl "http://localhost:3000"</code></pre>
+
+
+
+
+<p>O padrão REST possui 4 principais classificadores para tratar requisições, no nosso exemplo anterior só utilizamos o GET que é o classificador de uma requisição padrão. Além do GET, poderemos utilizar os classificadores POST, PUT e DELETE usando os métodos correspodentes na API do Express.</p>
+
+
+
+
+<p>Para ilustrar melhor vamos construir uma pequena API com as operações básicas de um CRUD para uma lista de contatos</p>
+
+
+
+
+<pre><code>#server.js
+...
+contacts = []
+
+app.use(express.bodyParser());
+
+var posts = []
+
+app.get('/contacts',function(req,res){
+  res.send(contacts)
+});
+
+app.post('/contacts', function(req,res){
+  var id = contacts.length + 1;
+  var name = req.body.title;
+  var contact = {id:id, name:name}
+  contacts.push(contact);
+  res.send(contacts);
+});
+
+app.put('/contacts/:id', function(req,res){
+  var id = req.params.id;
+  contacts[id-1].title = req.body.name;
+  res.send(contacts[id-1]);
+});
+
+app.delete('/contacts/:id', function(req,res){
+  var id = req.params.id;
+  contact = contacts.splice(id-1,1)
+  res.send("The post was removed");
+});
+
+app.listen(3000);
+console.log("Application is running in http://localhost:3000");
+
+</code></pre>
+
+
+
+
+<p>Podemos notar que não há muita dificuldade no uso da api, como já vimos temos o get que processa requisições do tipo GET e consequentemente o post, put e delete que correspondem as operações REST de mesmo nome. O que podemos observar são alguns detalhes. Primeiro, á chamada de app.use(express.bodyParser()) que serve para ajustar o body, ou seja, o corpo da requisiçao para uma forma que somos capazes de manipular via JSON, note que dentro da função anônima associada a app.post, obtemos os valores da requisição através de req.body, isto é o corpo da nossa requisição, onde se encontra dentre outras informações os atributos que definirmos na nossa chamada deste caminho. No caso enviamos o atributo name que será preecnhido com o nome do novo contato que vai ser salvo sempre que fizermos uma requisição POST para o caminho &#8216;/contacts&#8217;.  Outro detalhe é a passagem de parâmetros enviados pela URL, note que para <i>put</i> e <i>delete</i> definimos a URL com o sufixo :id, isso serve para dizer que quando for feita uma requisiçao REST para um desses métodos, a requisição receberá  um parâmetro chamado a id que pode ser recuperado através do objeto <i>req.params</i>.</p>
+
+
+<p><p>Para testarmos a aplicação basta iniciarmos ela com o comando <b>node</b> e fazer as requisições usando o cURL.</b></p>
+
+<p><pre><code>
+node server.js
+curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
+curl -X -d &ldquo;name=Jovem Nerd&rdquo; ṔOST <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
+curl -X -d &ldquo;name=Azaghal&rdquo; ṔOST <a href="http://localhost/contacts  ">http://localhost/contacts  </a>
+curl -X -d &ldquo;name=Gaveta&rdquo; ṔOST <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
+curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
+curl -X PUT -d &ldquo;name=Alexandre Ottoni&rdquo; <a href="http://localhost/contacts/1">http://localhost/contacts/1</a>
+[{id:1, name:&ldquo;Jovem Nerd&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;},{id:3, name:&ldquo;Gaveta&rdquo;}]
+curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
+[{id:1, name:&ldquo;Alexandre Ottoni&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;},{id:3, name:&ldquo;Gaveta&rdquo;}]
+curl -X DELETE <a href="http://localhost/contacts/3">http://localhost/contacts/3</a>
+curl -X GET <a href="http://localhost/contacts">http://localhost/contacts</a> <br/>
+[{id:1, name:&ldquo;Alexandre Ottoni&rdquo;}, {id:2, name:&ldquo;Azaghal&rdquo;}]
+</code></pre></p>
+
+<p><p>É isso aí pessoal, acima vemos a demonstração de uma singela aplicação REST que controla uma lista de contatos. Obviamente que se estívessesmos trablahando com alguma banco de dados o código seria um pouco diferente, porém o exemplo está aí para ilustrar o uso desse módulo do NodeJS.</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/">Nodejs - Criando Um Servidor HTTP</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-07T11:32:00-03:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>O passo inicial para criar uma aplicação com nodejs é utilizando o módulo de http. Este módulo possui funcões para que possamos lidar com requisições em uma determinada porta do servidor, para isso vamos conhecer o básico de sua API.
+Para fazer uso do módulo de HTTP, precisamos antes carregarmos em um objeto, através do uso do método require. Como vemos abaixo:
+<pre><code>var http = require(&lsquo;http&rsquo;);<br/>
+</code></pre></p>
+
+<p><p>Agora é onde começa nossa implementação. Por padrão o http requer uma funcão que receba como parametros dois obejtos: <strong>request</strong> e <strong>response</strong>, dessa forma temos que escrever algo deste tipo:</p>
+<pre><code>function handleRequest(request,response){</p>
+
+<pre><code>response.writeHead(200);
+response.write("Hello World");
+response.end();
+</code></pre>
+
+<p>}
+</code></pre></p>
+
+<p><p>Note que utilizamos o objeto response para definir as características da resposta do nosso servidor às requisções. Na primeira linha, é definido o Header do pacote de reposta, com o status 200, o que significa que a requisição está ok(podemos taḿbém usar os status como 501 para erro interno do servidor, ou 404 para uma requisição com falha). Em seguida, escrevemos o corpo da resposta com o método write e por fim, finalizamos a resposta do cliente. Esta função será usada como um <i>callback</i> para o método <i>createServer</i> do objeto http que nos retornará o nosso servidor web.</p>
+<pre><code>var server = http.createServer(handleRequest);</code></pre></p>
+
+<p><p>Por fim devemos fazer com que este nosso servidor criado seja associado a uma porta da nossa máquina, utilizando o método <i>listen()</i> do objeto referente ao servidor que foi criado.</p>
+<pre><code>server.listen(8080);</code></pre></p>
+
+<p><p><i>Observação: certifique-se de que a porta utilizada no parâmetro já não está sendo utilizada por outro serviço da sua máquina como um servidor apache ou algum outro tipo de Serviço</i> </p></p>
+
+<p><p>Pronto, desta forma temos nosso arquivo server.js, como segue abaixo:</p>
+<pre><code>var http = require(&lsquo;http&rsquo;);
+function handleRequest(request,response){</p>
+
+<pre><code>response.writeHead(200);
+response.write("Hello World");
+response.end();
+</code></pre>
+
+<p>}
+var server = http.createServer(handleRequest);<br/>
+server.listen(8080);
+</code></pre></p>
+
+<p><p>Para executarmos nosso servidor, basta usar o comando:</p>
+<pre><code>node server.js</code></pre></p>
+
+<p><p>E acessar a url <a href="http://localhost:8080">http://localhost:8080</a> e lá estará nosso primeiro exemplo de servidor.
+</p></p>
+
+<p><p>Como o javascript possui uma síntaxe bem felixível podemos simplificar o código acima para esta forma.</p>
+<pre>
+var http = require(&lsquo;http&rsquo;);
+http.createServer(function(request,response){</p>
+
+<pre><code>response.writeHead(200);
+response.write("Hello World");
+response.end();
+</code></pre>
+
+<p>}).listen(8080);
+</pre></p>
+
+<p><p>O módulo de HTTP do Nodejs possui uma extensa API que abrange várias funcionalidades do famoso protocolo de transferência de hipertexto, para mais informações confira a documentaçaõ oficial. (<a href="http://nodejs.org/api/http.html"><a href="http://nodejs.org/api/http.html">http://nodejs.org/api/http.html</a></a>)</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/07/nodejs-primeiros-passos/">Nodejs - Primeiros Passos</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-07T11:30:00-03:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>
+    O Nodejs foi uma das coisas mais bacanas a respeito de desenvolvimento para Web que conheci ultimamente. Trata-se de uma plataforma que permite desenvolver aplicações do lado do servidor usando apenas Javascript. O Nodejs foi construido com a engine de javascript do Google, V8, sendo este o que permite a escrita de Javascript para server-side. Fico devendo um outro post falando melhor sobre o v8, mas por enquanto vamos ao que interessa.
+</p>
+
+
+<h3>Instalando o Nodejs</h3>
+
+
+<p>
+    Para instalar o nodejs em um ambiente linux baixe o <a href="http://nodejs.org/dist/v0.8.19/node-v0.8.19.tar.gz">arquivo compactado(.tar.gz)</a>, extraia os arquivos e faça os seguintes passos:
+</p>
+
+
+<pre><code>
+    cd /<i>your_directory</i>/node-x.x.x
+    sudo ./configure --prefix=/usr/local/node
+    sudo make 
+    sudo make install
+</code></pre>
+
+
+
+
+<p>Ao concluir os comandos acima, o nodejs já está devidamente instalado com os outros demais recursos que eles oferecem, dentre os principais o npm(Node Package Manager), o qual será definido melhor nos próximos posts.</p>
+
+
+
+
+<h3>Hello World no Nodejs</h3>
+
+
+<p>
+    Para ter um primeiro contato, com o nodejs podemos utilizar o seu console. Um pequeno ambiente que pode rodar no terminal de shell do seu SO e que podemos testar alguns comandos básicos do nodejs. Abra seu terminal e faça os passos abaixo.
+</p>
+
+
+<pre><code>
+    node
+    > console.log("Hello World")
+    Hello World
+    undefined
+</code></pre>
+
+
+<p>
+    Nos próximos posts falaremos como começar a criar uma aplicação server-side utilizando o nodejs. Até lá&#8230;
+</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/07/hello-world/">Hello World</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-07T11:11:00-03:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p style="text-align: justify">Este é um blog que fiz para compartilhar meu aprendizado a respeito do desenvolvimento de aplicações para web e mobile, principalmente no que diz respeito a linguagens como Ruby e Javascript. Nos posts que virão a serguir teremos posts falando sobre Ruby on Rails, Backbone.js, Sinatra, Nodejs, NoSQL e muitas outras coisas. portanto:</p>
+
+
+<pre><code>(function(){
+  console.log('vamos nessa!')
+})();      
+</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -77,6 +647,26 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/13/teste/">Teste</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/13/rack-uma-rapida-apresentacao/">Rack - Uma Rápida Apresentação</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/13/backbone-dot-js-introducao/">Backbone.js - Introdução</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/08/nodejs-usando-rest-com-express/">Nodejs - Usando REST Com Express</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/07/nodejs-criando-a-primeira-aplicacao/">Nodejs - Criando Um Servidor HTTP</a>
+      </li>
     
   </ul>
 </section>
